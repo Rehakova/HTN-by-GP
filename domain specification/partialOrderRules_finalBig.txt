@@ -1,0 +1,1303 @@
+HTNSettings.params
+
+# define parameters
+6
+Type
+4
+Vehicle
+17
+Box
+21
+Crane
+21
+Location
+50
+Place
+21
+
+
+# define predicates
+18
+IsWater
+1
+Location
+IsGround
+1
+Location
+Car
+1
+Vehicle
+Boat
+1
+Vehicle
+IsType
+2
+Box
+Type
+AdjacentLoc
+2
+Location
+Location
+BuildCrAtLoc
+2
+Crane
+Location
+LayPlAtLoc
+2
+Place
+Location
+StayVehicleAtLoc
+2
+Vehicle
+Location
+On
+2
+Box
+Box
+OnPl
+2
+Box
+Place
+OnTop
+2
+Box
+Place
+EmptyCr
+1
+Crane
+OnCr
+2
+Box
+Crane
+EmptyVehicle
+1
+Vehicle
+OnVehicle
+2
+Box
+Vehicle
+OccupiedGr
+1
+Location
+OccupiedWa
+1
+Location
+
+
+# initWorld
+AdjacentLoc 0 1
+AdjacentLoc 1 0
+AdjacentLoc 1 2
+AdjacentLoc 1 3
+AdjacentLoc 2 1
+AdjacentLoc 3 1
+AdjacentLoc 3 4
+AdjacentLoc 4 3
+AdjacentLoc 4 5
+AdjacentLoc 5 4
+AdjacentLoc 5 6
+AdjacentLoc 6 5
+AdjacentLoc 6 7
+AdjacentLoc 6 11
+AdjacentLoc 7 6
+AdjacentLoc 7 8
+AdjacentLoc 7 12
+AdjacentLoc 8 7
+AdjacentLoc 8 9
+AdjacentLoc 8 13
+AdjacentLoc 9 8
+AdjacentLoc 9 14
+AdjacentLoc 10 11
+AdjacentLoc 11 6
+AdjacentLoc 11 10
+AdjacentLoc 11 12
+AdjacentLoc 12 7
+AdjacentLoc 12 11
+AdjacentLoc 12 13
+AdjacentLoc 13 8
+AdjacentLoc 13 12
+AdjacentLoc 13 14
+AdjacentLoc 13 16
+AdjacentLoc 14 9
+AdjacentLoc 14 13
+AdjacentLoc 14 15
+AdjacentLoc 14 17
+AdjacentLoc 15 14
+AdjacentLoc 16 13
+AdjacentLoc 16 17
+AdjacentLoc 17 14
+AdjacentLoc 17 16
+AdjacentLoc 17 18
+AdjacentLoc 18 17
+AdjacentLoc 18 19
+AdjacentLoc 18 26
+AdjacentLoc 19 18
+AdjacentLoc 19 20
+AdjacentLoc 20 19
+AdjacentLoc 21 22
+AdjacentLoc 21 28
+AdjacentLoc 21 47
+AdjacentLoc 22 21
+AdjacentLoc 22 23
+AdjacentLoc 22 29
+AdjacentLoc 23 22
+AdjacentLoc 23 24
+AdjacentLoc 23 30
+AdjacentLoc 24 23
+AdjacentLoc 24 25
+AdjacentLoc 24 31
+AdjacentLoc 25 24
+AdjacentLoc 25 26
+AdjacentLoc 25 32
+AdjacentLoc 26 18
+AdjacentLoc 26 25
+AdjacentLoc 26 27
+AdjacentLoc 26 33
+AdjacentLoc 27 26
+AdjacentLoc 27 34
+AdjacentLoc 28 21
+AdjacentLoc 28 29
+AdjacentLoc 28 36
+AdjacentLoc 29 22
+AdjacentLoc 29 28
+AdjacentLoc 29 30
+AdjacentLoc 29 40
+AdjacentLoc 30 23
+AdjacentLoc 30 29
+AdjacentLoc 30 31
+AdjacentLoc 31 24
+AdjacentLoc 31 30
+AdjacentLoc 31 32
+AdjacentLoc 31 42
+AdjacentLoc 32 25
+AdjacentLoc 32 31
+AdjacentLoc 32 33
+AdjacentLoc 33 26
+AdjacentLoc 33 32
+AdjacentLoc 33 34
+AdjacentLoc 34 27
+AdjacentLoc 34 33
+AdjacentLoc 34 35
+AdjacentLoc 34 44
+AdjacentLoc 35 34
+AdjacentLoc 35 37
+AdjacentLoc 36 28
+AdjacentLoc 36 38
+AdjacentLoc 37 35
+AdjacentLoc 37 46
+AdjacentLoc 38 36
+AdjacentLoc 38 39
+AdjacentLoc 39 38
+AdjacentLoc 39 40
+AdjacentLoc 40 29
+AdjacentLoc 40 39
+AdjacentLoc 40 41
+AdjacentLoc 41 40
+AdjacentLoc 41 42
+AdjacentLoc 42 31
+AdjacentLoc 42 41
+AdjacentLoc 42 43
+AdjacentLoc 43 42
+AdjacentLoc 43 44
+AdjacentLoc 44 34
+AdjacentLoc 44 43
+AdjacentLoc 44 45
+AdjacentLoc 45 44
+AdjacentLoc 45 46
+AdjacentLoc 46 37
+AdjacentLoc 46 45
+AdjacentLoc 47 21
+AdjacentLoc 47 48
+AdjacentLoc 48 47
+AdjacentLoc 48 49
+AdjacentLoc 49 48
+IsGround 0
+IsGround 1
+IsGround 2
+IsGround 3
+IsGround 4
+IsGround 5
+IsGround 6
+IsGround 7
+IsGround 8
+IsGround 9
+IsGround 10
+IsGround 11
+IsGround 12
+IsGround 13
+IsGround 14
+IsGround 15
+IsGround 16
+IsGround 17
+IsGround 18
+IsGround 19
+IsGround 20
+IsGround 21
+IsGround 22
+IsGround 23
+IsGround 24
+IsGround 25
+IsGround 26
+IsGround 27
+IsGround 28
+IsGround 29
+IsGround 30
+IsGround 31
+IsGround 32
+IsGround 33
+IsGround 34
+IsGround 35
+IsGround 36
+IsGround 37
+IsGround 38
+IsGround 39
+IsGround 40
+IsGround 41
+IsGround 42
+IsGround 43
+IsGround 44
+IsGround 45
+IsGround 46
+IsGround 47
+IsGround 48
+IsGround 49
+Car 0
+Car 1
+Car 2
+Car 3
+Car 4
+Car 5
+Car 6
+Car 7
+Car 8
+Car 9
+Car 10
+Car 11
+Car 12
+Car 13
+Car 14
+Car 15
+Car 16
+StayVehicleAtLoc 0 0
+OccupiedGr 0
+EmptyVehicle 0
+StayVehicleAtLoc 1 1
+OccupiedGr 1
+EmptyVehicle 1
+StayVehicleAtLoc 2 2
+OccupiedGr 2
+EmptyVehicle 2
+StayVehicleAtLoc 3 5
+OccupiedGr 5
+EmptyVehicle 3
+StayVehicleAtLoc 14 9
+OccupiedGr 9
+EmptyVehicle 14
+StayVehicleAtLoc 4 12
+OccupiedGr 12
+EmptyVehicle 4
+StayVehicleAtLoc 16 14
+OccupiedGr 14
+EmptyVehicle 16
+StayVehicleAtLoc 5 16
+OccupiedGr 16
+EmptyVehicle 5
+StayVehicleAtLoc 11 23
+OccupiedGr 23
+EmptyVehicle 11
+StayVehicleAtLoc 12 26
+OccupiedGr 26
+EmptyVehicle 12
+StayVehicleAtLoc 15 33
+OccupiedGr 33
+EmptyVehicle 15
+StayVehicleAtLoc 13 37
+OccupiedGr 37
+EmptyVehicle 13
+StayVehicleAtLoc 9 40
+OccupiedGr 40
+EmptyVehicle 9
+StayVehicleAtLoc 10 43
+OccupiedGr 43
+EmptyVehicle 10
+StayVehicleAtLoc 8 47
+OccupiedGr 47
+EmptyVehicle 8
+StayVehicleAtLoc 7 48
+OccupiedGr 48
+EmptyVehicle 7
+StayVehicleAtLoc 6 49
+OccupiedGr 49
+EmptyVehicle 6
+BuildCrAtLoc 0 0
+BuildCrAtLoc 1 3
+BuildCrAtLoc 2 4
+BuildCrAtLoc 3 5
+BuildCrAtLoc 4 7
+BuildCrAtLoc 5 13
+BuildCrAtLoc 6 29
+BuildCrAtLoc 7 30
+BuildCrAtLoc 8 31
+BuildCrAtLoc 9 32
+BuildCrAtLoc 10 38
+BuildCrAtLoc 11 39
+BuildCrAtLoc 12 40
+BuildCrAtLoc 13 41
+BuildCrAtLoc 14 42
+BuildCrAtLoc 15 43
+BuildCrAtLoc 16 44
+BuildCrAtLoc 17 45
+BuildCrAtLoc 18 46
+BuildCrAtLoc 19 20
+BuildCrAtLoc 20 2
+LayPlAtLoc 0 0
+LayPlAtLoc 1 0
+LayPlAtLoc 2 2
+LayPlAtLoc 3 7
+LayPlAtLoc 4 4
+LayPlAtLoc 5 5
+LayPlAtLoc 6 5
+LayPlAtLoc 7 13
+LayPlAtLoc 8 13
+LayPlAtLoc 9 30
+LayPlAtLoc 10 31
+LayPlAtLoc 11 32
+LayPlAtLoc 12 32
+LayPlAtLoc 13 38
+LayPlAtLoc 14 39
+LayPlAtLoc 15 41
+LayPlAtLoc 16 44
+LayPlAtLoc 17 44
+LayPlAtLoc 18 44
+LayPlAtLoc 19 46
+LayPlAtLoc 20 46
+EmptyCr 0
+OnCr 6 1
+EmptyCr 2
+EmptyCr 3
+OnCr 7 4
+EmptyCr 5
+EmptyCr 6
+EmptyCr 7
+OnCr 9 8
+EmptyCr 9
+EmptyCr 10
+EmptyCr 11
+EmptyCr 12
+EmptyCr 13
+EmptyCr 14
+EmptyCr 15
+EmptyCr 16
+EmptyCr 17
+EmptyCr 18
+EmptyCr 19
+EmptyCr 20
+OnTop 0 0
+On 0 1
+OnPl 0 0
+On 1 2
+OnPl 1 0
+On 2 20
+OnPl 2 0
+OnTop 3 1
+On 3 20
+OnPl 3 1
+OnTop 4 2
+On 4 5
+OnPl 4 2
+On 5 20
+OnPl 5 2
+OnTop 20 3
+OnTop 20 4
+OnTop 17 5
+On 17 18
+OnPl 17 5
+On 18 19
+OnPl 18 5
+On 19 20
+OnPl 19 5
+OnTop 20 6
+OnTop 8 7
+On 8 20
+OnPl 8 7
+OnTop 20 8
+OnTop 20 9
+OnTop 10 10
+On 10 20
+OnPl 10 10
+OnTop 20 11
+OnTop 20 12
+OnTop 15 13
+On 15 16
+OnPl 15 13
+On 16 20
+OnPl 16 13
+OnTop 20 14
+OnTop 14 15
+On 14 20
+OnPl 14 15
+OnTop 20 16
+OnTop 20 17
+OnTop 20 18
+OnTop 11 19
+On 11 12
+OnPl 11 19
+On 12 13
+OnPl 12 19
+On 13 20
+OnPl 13 19
+OnTop 20 20
+IsType 0 0
+IsType 1 2
+IsType 2 2
+IsType 3 2
+IsType 4 2
+IsType 5 2
+IsType 6 2
+IsType 7 2
+IsType 8 2
+IsType 9 2
+IsType 10 2
+IsType 11 2
+IsType 12 2
+IsType 13 2
+IsType 14 2
+IsType 15 2
+IsType 16 1
+IsType 17 2
+IsType 18 2
+IsType 19 2
+---
+
+
+# define starting parameters
+1
+4
+Type 1
+Location 44
+Type 0
+Location 44
+
+
+# define fitness
+2
+2
+IsType I 1 & OnPl I A & LayPlAtLoc A 44 | IsType I 1 & OnCr I A & BuildCrAtLoc A 44 | IsType I 1 & OnVehicle I A & StayVehicleAtLoc A 44
+IsType I 1 & OnVehicle I A
+2
+IsType I 0 & OnPl I A & LayPlAtLoc A 44 | IsType I 0 & OnCr I A & BuildCrAtLoc A 44 | IsType I 0 & OnVehicle I A & StayVehicleAtLoc A 44
+IsType I 0 & OnVehicle I A
+
+
+# define operators
+22
+GroundStay
+GroundMove
+3
+Vehicle A
+Location B
+Location C
+3
+StayVehicleAtLoc A B
+StayVehicleAtLoc A C
+Car A
+0
+0
+BaseGroundMove
+GroundMove
+3
+Vehicle A
+Location B
+Location C
+5
+Car A
+IsGround C
+AdjacentLoc B C
+-OccupiedGr C
+StayVehicleAtLoc A B
+4
+-StayVehicleAtLoc A B
+StayVehicleAtLoc A C
+-OccupiedGr B
+OccupiedGr C
+0
+BaseGroundMove2
+GroundMove
+3
+Vehicle A
+Location B
+Location C
+5
+Car A
+IsGround C
+AdjacentLoc B C
+-OccupiedGr C
+StayVehicleAtLoc A B
+4
+-StayVehicleAtLoc A B
+StayVehicleAtLoc A C
+-OccupiedGr B
+OccupiedGr C
+0
+BaseGroundMove3
+GroundMove
+3
+Vehicle A
+Location B
+Location C
+5
+Car A
+IsGround C
+AdjacentLoc B C
+-OccupiedGr C
+StayVehicleAtLoc A B
+4
+-StayVehicleAtLoc A B
+StayVehicleAtLoc A C
+-OccupiedGr B
+OccupiedGr C
+0
+WaterStay
+WaterMove
+3
+Vehicle A
+Location B
+Location C
+3
+StayVehicleAtLoc A B
+StayVehicleAtLoc A C
+Boat A
+0
+0
+BaseWaterMove
+WaterMove
+3
+Vehicle A
+Location B
+Location C
+5
+Boat A
+IsWater C
+AdjacentLoc B C
+-OccupiedWa C
+StayVehicleAtLoc A B
+4
+-StayVehicleAtLoc A B
+StayVehicleAtLoc A C
+-OccupiedWa B
+OccupiedWa C
+0
+BaseWaterMove2
+WaterMove
+3
+Vehicle A
+Location B
+Location C
+5
+Boat A
+IsWater C
+AdjacentLoc B C
+-OccupiedWa C
+StayVehicleAtLoc A B
+4
+-StayVehicleAtLoc A B
+StayVehicleAtLoc A C
+-OccupiedWa B
+OccupiedWa C
+0
+BaseWaterMove3
+WaterMove
+3
+Vehicle A
+Location B
+Location C
+5
+Boat A
+IsWater C
+AdjacentLoc B C
+-OccupiedWa C
+StayVehicleAtLoc A B
+4
+-StayVehicleAtLoc A B
+StayVehicleAtLoc A C
+-OccupiedWa B
+OccupiedWa C
+0
+Load
+Load
+4
+Crane A
+Box B
+Vehicle C
+Location D
+4
+OnCr B A
+EmptyVehicle C
+BuildCrAtLoc A D
+StayVehicleAtLoc C D
+4
+EmptyCr A
+-OnCr B A
+-EmptyVehicle C
+OnVehicle B C
+0
+Unload
+Unload
+4
+Crane A
+Box B
+Vehicle C
+Location D
+4
+BuildCrAtLoc A D
+StayVehicleAtLoc C D
+EmptyCr A
+OnVehicle B C
+4
+-EmptyCr A
+-OnVehicle B C
+EmptyVehicle C
+OnCr B A
+0
+Take
+Take
+4
+Crane A
+Box B
+Place C
+Location D
+6
+BuildCrAtLoc A D
+LayPlAtLoc C D
+EmptyCr A
+OnPl B C
+OnTop B C
+On B E
+6
+-EmptyCr A
+-OnPl B C
+-OnTop B C
+-On B E
+OnTop E C
+OnCr B A
+0
+Put
+Put
+4
+Crane A
+Box B
+Place C
+Location D
+4
+BuildCrAtLoc A D
+LayPlAtLoc C D
+OnCr B A
+OnTop E C
+6
+-OnCr B A
+-OnTop E C
+OnPl B C
+OnTop B C
+On B E
+EmptyCr A
+0
+FindOnPlace
+ChooseBox
+3
+Box B
+Type T
+Location L
+3
+IsType B T
+OnPl B P
+LayPlAtLoc P L
+0
+0
+FindOnCrane
+ChooseBox
+3
+Box B
+Type T
+Location L
+3
+IsType B T
+OnCr B C
+BuildCrAtLoc C L
+0
+0
+IsOnCrane
+LoadingPraparation
+2
+Box B
+Location L
+2
+OnCr B C
+BuildCrAtLoc C L
+0
+0
+IsOnTop
+LoadingPraparation
+2
+Box B
+Location L
+2
+OnTop B P
+LayPlAtLoc P L
+0
+0
+FindCar
+ChooseCar
+2
+Vehicle A
+Location B
+2
+Car A
+StayVehicleAtLoc A B
+0
+0
+FindNewCar
+ChooseAnotherCar
+3
+Vehicle A
+Vehicle B
+Location C
+3
+Car A
+StayVehicleAtLoc A C
+!= A B
+0
+0
+FindBoat
+ChooseBoat
+2
+Vehicle A
+Location B
+2
+Boat A
+StayVehicleAtLoc A B
+0
+0
+FindNewBoat
+ChooseAnotherBoat
+3
+Vehicle A
+Vehicle B
+Location C
+3
+Boat A
+StayVehicleAtLoc A C
+!= A B
+0
+0
+FindEmptyCr
+ChooseUnloadingPlace
+3
+Crane A
+Location B
+Location C
+3
+BuildCrAtLoc A B
+EmptyCr A
+!= B C
+0
+0
+FindPlace
+ChooseUnloadingPlace
+3
+Crane A
+Location B
+Location C
+3
+BuildCrAtLoc A B
+LayPlAtLoc P B
+!= B C
+0
+0
+
+
+
+
+# define methods
+26
+RGroundMove
+GroundMove
+3
+Vehicle A
+Location B
+Location C
+2
+GroundMove A B D
+GroundMove A D C
+0
+1
+0 1
+0
+0
+DodgeGroundMove
+GroundMove
+3
+Vehicle A
+Location B
+Location C
+2
+GroundMove E C G
+GroundMove A B C
+0
+1
+0 1
+0
+0
+RWaterMove
+WaterMove
+3
+Vehicle A
+Location B
+Location C
+2
+WaterMove A B D
+WaterMove A D C
+0
+1
+0 1
+0
+0
+DodgeWaterMove
+WaterMove
+3
+Vehicle A
+Location B
+Location C
+2
+WaterMove E C G
+WaterMove A B C
+0
+1
+0 1
+0
+0
+TranshipmentGroundGroundMove
+GroundMove
+3
+Vehicle A
+Location B
+Location C
+6
+UnloadRobot CR K A B
+GroundMove A B T
+ChooseAnotherCar Q A Y
+ArriveOnGround Q Y B K
+LoadUpRobot CR K Q B
+GroundMove Q B C
+0
+5
+0 1
+1 3
+2 3
+3 4
+4 5
+1
+A Q
+0
+TranshipmentGroundWaterMove
+GroundMove
+3
+Vehicle A
+Location B
+Location C
+5
+UnloadRobot CR K A B
+ChooseBoat Q Y
+ArriveOnWater Q Y B K
+LoadUpRobot CR K Q B
+WaterMove Q B C
+0
+4
+0 3
+1 2
+2 3
+3 4
+1
+A Q
+0
+TranshipmentWaterWaterMove
+WaterMove
+3
+Vehicle A
+Location B
+Location C
+6
+UnloadRobot CR K A B
+WaterMove A B T
+ChooseAnotherBoat Q A Y
+ArriveOnWater Q Y B K
+LoadUpRobot CR K Q B
+WaterMove Q B C
+0
+5
+0 1
+1 3
+2 3
+3 4
+4 5
+1
+A Q
+0
+TranshipmentWaterGroundMove
+WaterMove
+3
+Vehicle A
+Location B
+Location C
+5
+UnloadRobot CR K A B
+ChooseCar Q Y
+ArriveOnGround Q Y B K
+LoadUpRobot CR K Q B
+GroundMove Q B C
+0
+4
+0 3
+1 2
+2 3
+3 4
+1
+A Q
+0
+LoadUpFreeCr
+LoadUpRobot
+4
+Crane D
+Box A
+Vehicle B
+Location C
+2
+Take D A E C
+Load D A B C
+0
+1
+0 1
+0
+0
+LoadUpGoodCr
+LoadUpRobot
+4
+Crane D
+Box A
+Vehicle B
+Location C
+1
+Load D A B C
+0
+0
+0
+0
+LoadUpBadCr
+LoadUpRobot
+4
+Crane D
+Box A
+Vehicle B
+Location C
+3
+Put D K P C
+Take D A E C
+Load D A B C
+0
+2
+0 1
+1 2
+0
+0
+UnloadEmptyEmptyCr
+UnloadRobot
+4
+Crane D
+Box A
+Vehicle B
+Location C
+2
+Unload D A B C
+Put D A P C
+0
+1
+0 1
+0
+0
+UnloadEmptyFullCr
+UnloadRobot
+4
+Crane D
+Box A
+Vehicle B
+Location C
+1
+Unload D A B C
+0
+0
+0
+0
+UnloadFullEmptyCr
+UnloadRobot
+4
+Crane D
+Box A
+Vehicle B
+Location C
+3
+Put D K M C
+Unload D A B C
+Put D A P C
+0
+2
+0 1
+1 2
+0
+0
+UnloadFullFullCr
+UnloadRobot
+4
+Crane D
+Box A
+Vehicle B
+Location C
+2
+Put D K M C
+Unload D A B C
+0
+1
+0 1
+0
+0
+TakeAwayFromGround
+LoadingPraparation
+2
+Box B
+Location L
+6
+LoadUpRobot Cr1 BB C L
+ChooseUnloadingPlace Cr2 O L
+TakeAwayOnGround C L O BB
+UnloadRobot Cr2 BB C O
+ArriveOnGround C2 O2 L B
+LoadingPraparation B L
+0
+5
+0 2
+1 2
+2 3
+3 4
+4 5
+0
+0
+TakeAwayFromWater
+LoadingPraparation
+2
+Box B
+Location L
+6
+LoadUpRobot Cr1 BB C L
+ChooseUnloadingPlace Cr2 O L
+TakeAwayOnWater C L O BB
+UnloadRobot Cr2 BB C O
+ArriveOnWater C2 O2 L B
+LoadingPraparation B L
+0
+5
+0 2
+1 2
+2 3
+3 4
+4 5
+0
+0
+Reorganize
+LoadingPraparation
+2
+Box B
+Location L
+3
+Take Cr BB P L
+Put Cr BB Q L
+LoadingPraparation B L
+0
+2
+0 1
+1 2
+0
+0
+ReorganizeFullCr
+LoadingPraparation
+2
+Box B
+Location L
+2
+Put Cr BB Q L
+LoadingPraparation B L
+0
+1
+0 1
+0
+0
+StartAtGroundDeliver
+Deliver
+2
+Type T
+Location B
+7
+ChooseBox A T L2
+ChooseCar C L
+ArriveOnGround C L L2 A
+LoadingPraparation A L2 C
+LoadUpRobot CR A C L2
+GroundMove C L2 B
+UnloadRobot CR2 A C B
+0
+6
+0 2
+1 2
+2 3
+3 4
+4 5
+5 6
+0
+3
+min
+min
+OnDist Box A AdjacentLocDist B Loc + : IsType A T , OnPl A Pl , OnTop Box Pl , LayPlAtLoc Pl Loc
+min
+AdjacentLocDist B Loc : IsType A T , OnVehicle A Vehicle , StayVehicleAtLoc Vehicle Loc
+min 
+AdjacentLocDist B Loc : IsType A T , OnCr A Cr , BuildCrAtLoc Cr Loc
+2
+T
+B
+true
+StartAtWaterDeliver
+Deliver
+2
+Type T
+Location B
+7
+ChooseBox A T L2
+ChooseBoat C L
+ArriveOnWater C L L2 A
+LoadingPraparation A L2 C
+LoadUpRobot CR A C L2
+WaterMove C L2 B
+UnloadRobot CR2 A C B
+0
+6
+0 2
+1 2
+2 3
+3 4
+4 5
+5 6
+0
+3
+min
+min
+OnDist Box A AdjacentLocDist B Loc + : IsType A T , OnPl A Pl , OnTop Box Pl , LayPlAtLoc Pl Loc
+min
+AdjacentLocDist B Loc : IsType A T , OnVehicle A Vehicle , StayVehicleAtLoc Vehicle Loc
+min 
+AdjacentLocDist B Loc : IsType A T , OnCr A Cr , BuildCrAtLoc Cr Loc
+2
+T
+B
+true
+Finish2Boxes
+nill
+4
+Type A
+Location B
+Type C
+Location D
+2
+Deliver A B
+Deliver C D
+0
+1
+0 1
+0
+0
+GroundTakingAwayRating
+TakeAwayOnGround
+4
+Vehicle A
+Location B
+Location C
+Box D
+1
+GroundMove A B C
+0
+0
+0
+1
+min
+min
+AdjacentLocDist C Loc : StayVehicleAtLoc A Loc
+2
+D
+B
+false
+WaterTakingAwayRating
+TakeAwayOnWater
+4
+Vehicle A
+Location B
+Location C
+Box D
+1
+WaterMove A B C
+0
+0
+0
+1
+min
+min
+AdjacentLocDist C Loc : StayVehicleAtLoc A Loc
+2
+D
+B
+false
+GroundArrivingRating
+ArriveOnGround
+4
+Vehicle A
+Location B
+Location C
+Box D
+1
+GroundMove A B C
+0
+0
+0
+1
+min
+min
+AdjacentLocDist C Loc : StayVehicleAtLoc A Loc
+2
+D
+C
+false
+WaterArrivingRating
+ArriveOnWater
+4
+Vehicle A
+Location B
+Location C
+Box D
+1
+WaterMove A B C
+0
+0
+0
+1
+min
+min
+AdjacentLocDist C Loc : StayVehicleAtLoc A Loc
+2
+D
+C
+false

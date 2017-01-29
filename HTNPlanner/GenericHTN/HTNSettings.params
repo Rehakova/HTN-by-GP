@@ -1,0 +1,116 @@
+state = ec.simple.SimpleEvolutionState
+finish = ec.simple.SimpleFinisher   
+breed =	ec.simple.SimpleBreeder
+eval = ec.simple.SimpleEvaluator
+init = ec.gp.GPInitializer   
+
+evalthreads = 1
+breedthreads = 1     
+seed.0 = time          
+
+exch = ec.exchange.InterPopulationExchange
+exch.select = ec.select.TournamentSelection
+exch.subpop.0.select.size = 2
+exch.subpop.1.select.size = 2
+exch.subpop.2.select.size = 2
+exch.subpop.3.select.size = 2
+exch.select-to-die = ec.select.RandomSelection
+exch.size = 2
+exch.start = 500
+exch.mod = 500
+exch.subpop.0.num-dest = 1
+exch.subpop.0.dest.0 = 0
+exch.subpop.1.num-dest = 1
+exch.subpop.1.dest.0 = 1 
+exch.subpop.2.num-dest = 1
+exch.subpop.2.dest.0 = 2  
+exch.subpop.3.num-dest = 1
+exch.subpop.3.dest.0 = 3
+# exch.chatty = false;          
+
+generations = 5051 
+breed.elite.0 = 1 
+quit-on-run-complete = true  
+
+                   
+checkpoint = false
+checkpoint-modulo = 1
+checkpoint-prefix = ec
+
+
+pop = ec.Population
+pop.default-subpop = 0   
+pop.subpops =	4
+pop.subpop.0 = ec.Subpopulation    
+pop.subpop.0.size =	1024
+
+pop.subpop.0.species.fitness = ec.gp.koza.KozaFitness    
+pop.subpop.0.species = ec.gp.GPSpecies
+pop.subpop.0.species.ind = ec.gp.GPIndividual
+pop.subpop.0.duplicate-retries = 100        
+
+pop.subpop.0.species.pipe = ec.breed.MultiBreedingPipeline
+pop.subpop.0.species.pipe.generate-max = false
+pop.subpop.0.species.pipe.num-sources = 4
+pop.subpop.0.species.pipe.source.0 = ec.gp.koza.CrossoverPipeline
+pop.subpop.0.species.pipe.source.0.prob = 0.1
+pop.subpop.0.species.pipe.source.1 = ec.gp.breed.MutateOneNodePipeline
+pop.subpop.0.species.pipe.source.1.prob = 0.1
+pop.subpop.0.species.pipe.source.2 = ec.gp.koza.MutationPipeline
+pop.subpop.0.species.pipe.source.2.prob = 0.6
+pop.subpop.0.species.pipe.source.3 = ec.gp.breed.MutateAllNodesPipeline
+pop.subpop.0.species.pipe.source.3.prob = 0.2
+
+
+breed.reproduce.source.0 = ec.select.TournamentSelectionComparingTypes  
+select.tournament.size = 2
+
+gp.koza.xover.source.0 = ec.select.TournamentSelectionComparingTypes
+gp.koza.xover.source.1 = same
+gp.koza.xover.ns.0 = ec.gp.koza.ImportantNodeSelector
+gp.koza.xover.ns.1 = same
+gp.koza.xover.maxdepth = 30
+gp.koza.xover.tries = 1
+
+gp.breed.mutate-one-node.source.0 = ec.select.TournamentSelectionComparingTypes
+gp.breed.mutate-one-node.ns.0 = ec.gp.koza.ImportantNodeSelector
+gp.breed.mutate-one-node.tree.0 = 0
+                                                
+gp.breed.mutate-all-nodes.source.0 = ec.select.TournamentSelectionComparingTypes
+gp.breed.mutate-all-nodes.ns.0 = ec.gp.koza.ImportantNodeSelector
+gp.breed.mutate-all-nodes.tree.0 = 0
+                   
+gp.koza.mutate.source.0 = ec.select.TournamentSelectionComparingTypes
+gp.koza.mutate.tries = 1
+gp.koza.mutate.maxdepth = 30
+gp.koza.mutate.tree.0 = 0
+gp.koza.mutate.pipe.ns = ec.gp.koza.ImportantNodeSelector
+gp.koza.mutate.build.0 = ec.gp.koza.GrowBuilder
+gp.koza.mutate.equal = true
+gp.koza.grow.min-depth = 5
+gp.koza.grow.max-depth = 5          
+
+gp.koza.mutate.ns.0 = ec.gp.koza.ImportantNodeSelector
+                          
+
+gp.problem.stack = ec.gp.ADFStack
+gp.adf-stack.context = ec.gp.ADFContext
+
+
+gp.tc.size = 1
+gp.tc.0 = ec.gp.GPTreeConstraints
+gp.tc.0.name = tc0
+gp.tc.0.init = ec.gp.koza.HalfBuilder
+gp.koza.half.min-depth = 2
+gp.koza.half.max-depth = 5
+gp.koza.half.growp = 0.5
+                  
+               
+stat = ec.simple.SimpleStatistics
+stat.num-children = 1
+stat.child.0 = ec.gp.koza.KozaShortStatistics     
+stat.file = $result/out.stat         
+stat.child.0.file = $result/out2.stat
+
+
+jobs = 10
