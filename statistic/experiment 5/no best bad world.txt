@@ -1,0 +1,33 @@
+(FinishBox (StartAtGroundDeliver (FindOnPlace
+     Box0 Type1 Location3) (FindCar Vehicle2 Location5)
+     (GroundArrivingRating (RGroundMove (RGroundMove
+         (BaseGroundMove2 Vehicle2 Location5 Location1)
+         (BaseGroundMove3 Vehicle2 Location1 Location2))
+         (RGroundMove (GroundStay Vehicle2 Location2
+             Location2) (BaseGroundMove Vehicle2 Location2
+             Location3)))) (TakeAwayFromWater (LoadUpFreeCr
+     (Take Crane4 Box1 Place0 Location3) (Load
+     Crane4 Box1 Vehicle2 Location3)) (FindEmptyCr
+     Crane5 Location34 Location3) (WaterTakingAwayRating
+     (TranshipmentWaterGroundMove (UnloadEmptyFullCr
+         (Unload Cranenull Boxnull Vehiclenull Locationnull))
+         (FindCar Vehicle2 Location3) (GroundArrivingRating
+         (BaseGroundMove3 Vehicle2 Location3 Location3))
+         (LoadUpBadCr (Put Cranenull Boxnull Placenull
+             Locationnull) (Take Cranenull Boxnull Placenull
+             Locationnull) (Load Cranenull Boxnull Vehiclenull
+             Locationnull)) (GroundStay Vehiclenull Locationnull
+         Locationnull))) (UnloadEmptyFullCr (Unload
+     Cranenull Boxnull Vehiclenull Locationnull))
+     (WaterArrivingRating (RWaterMove (WaterStay
+         Vehiclenull Locationnull Locationnull) (BaseWaterMove
+         Vehiclenull Locationnull Locationnull)))
+     (ReorganizeFullCr (Put Cranenull Boxnull
+         Placenull Locationnull) (IsOnTop Boxnull
+         Locationnull))) (LoadUpFreeCr (Take Cranenull
+     Boxnull Placenull Locationnull) (Load Cranenull
+     Boxnull Vehiclenull Locationnull)) (BaseGroundMove3
+     Vehiclenull Locationnull Locationnull) (UnloadEmptyEmptyCr
+     (Unload Cranenull Boxnull Vehiclenull Locationnull)
+     (Put Cranenull Boxnull Placenull Locationnull))))
+Partial order: FindOnPlace(Box0, Type1, Location3) FindCar(Vehicle2, Location5) BaseGroundMove2(Vehicle2, Location5, Location1) BaseGroundMove3(Vehicle2, Location1, Location2) GroundStay(Vehicle2, Location2, Location2) BaseGroundMove(Vehicle2, Location2, Location3) Take(Crane4, Box1, Place0, Location3) FindEmptyCr(Crane5, Location34, Location3) Load(Crane4, Box1, Vehicle2, Location3) FindCar(Vehicle2, Location3) BaseGroundMove3(Vehicle2, Location3, Location3) Unload(Cranenull, Boxnull, Vehiclenull, Locationnull) Put(Cranenull, Boxnull, Placenull, Locationnull) Take(Cranenull, Boxnull, Placenull, Locationnull) Load(Cranenull, Boxnull, Vehiclenull, Locationnull) GroundStay(Vehiclenull, Locationnull, Locationnull) Unload(Cranenull, Boxnull, Vehiclenull, Locationnull) WaterStay(Vehiclenull, Locationnull, Locationnull) BaseWaterMove(Vehiclenull, Locationnull, Locationnull) Put(Cranenull, Boxnull, Placenull, Locationnull) IsOnTop(Boxnull, Locationnull) Take(Cranenull, Boxnull, Placenull, Locationnull) Load(Cranenull, Boxnull, Vehiclenull, Locationnull) BaseGroundMove3(Vehiclenull, Locationnull, Locationnull) Unload(Cranenull, Boxnull, Vehiclenull, Locationnull) Put(Cranenull, Boxnull, Placenull, Locationnull) 

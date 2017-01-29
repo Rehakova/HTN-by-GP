@@ -1,0 +1,66 @@
+(FinishBoxe (StartAtGroundDeliver (FindOnPlace
+     Box0 Type0 Location0) (FindCar Vehicle0 Location0)
+     (GroundArrivingRating (GroundStay Vehicle0
+         Location0 Location0)) (IsOnTop Box0 Location0)
+     (LoadUpFreeCr (Take Crane0 Box0 Place0 Location0)
+         (Load Crane0 Box0 Vehicle0 Location0)) (RGroundMove
+     (RGroundMove (GroundStay Vehicle0 Location0
+         Location0) (DodgeGroundMove (BaseGroundMove
+         Vehicle1 Location1 Location3) (BaseGroundMove3
+         Vehicle0 Location0 Location1))) (RGroundMove
+     (RGroundMove (GroundStay Vehicle0 Location1
+         Location1) (DodgeGroundMove (BaseGroundMove2
+         Vehicle1 Location3 Location4) (BaseGroundMove3
+         Vehicle0 Location1 Location3))) (RGroundMove
+     (DodgeGroundMove (DodgeGroundMove (BaseGroundMove2
+         Vehicle3 Location5 Location6) (BaseGroundMove
+         Vehicle1 Location4 Location5)) (BaseGroundMove3
+         Vehicle0 Location3 Location4)) (TranshipmentGroundGroundMove
+     (UnloadEmptyFullCr (Unload Crane2 Box0 Vehicle0
+         Location4)) (GroundStay Vehicle0 Location4
+     Location4) (FindNewCar Vehicle1 Vehicle0
+     Location5) (GroundArrivingRating (DodgeGroundMove
+     (BaseGroundMove Vehicle0 Location4 Location3)
+     (BaseGroundMove2 Vehicle1 Location5 Location4)))
+     (LoadUpBadCr (Put Crane2 Box0 Place4 Location4)
+         (Take Crane2 Box0 Place4 Location4) (Load
+         Crane2 Box0 Vehicle1 Location4)) (RGroundMove
+     (BaseGroundMove2 Vehicle1 Location4 Location5)
+     (RGroundMove (RGroundMove (TranshipmentGroundGroundMove
+         (UnloadEmptyFullCr (Unload Crane3 Box0 Vehicle1
+             Location5)) (BaseGroundMove3 Vehicle1 Location5
+         Location4) (FindNewCar Vehicle3 Vehicle1
+         Location6) (GroundArrivingRating (BaseGroundMove2
+         Vehicle3 Location6 Location5)) (LoadUpBadCr
+         (Put Crane3 Box0 Place5 Location5) (Take
+         Crane3 Box0 Place5 Location5) (Load Crane3
+         Box0 Vehicle3 Location5)) (BaseGroundMove3
+         Vehicle3 Location5 Location6)) (RGroundMove
+         (BaseGroundMove2 Vehicle3 Location6 Location7)
+         (BaseGroundMove Vehicle3 Location7 Location8)))
+         (RGroundMove (BaseGroundMove Vehicle3 Location8
+             Location13) (TranshipmentGroundGroundMove
+             (UnloadEmptyEmptyCr (Unload Crane5 Box0 Vehicle3
+                 Location13) (Put Crane5 Box0 Place8 Location13))
+             (BaseGroundMove3 Vehicle3 Location13 Location8)
+             (FindNewCar Vehicle5 Vehicle3 Location16)
+             (GroundArrivingRating (BaseGroundMove Vehicle5
+                 Location16 Location13)) (LoadUpFreeCr (Take
+             Crane5 Box0 Place8 Location13) (Load Crane5
+             Box0 Vehicle5 Location13)) (RGroundMove (BaseGroundMove
+             Vehicle5 Location13 Location16) (RGroundMove
+             (BaseGroundMove3 Vehicle5 Location16 Location17)
+             (RGroundMove (BaseGroundMove Vehicle5 Location17
+                 Location18) (RGroundMove (DodgeGroundMove
+                 (BaseGroundMove2 Vehicle12 Location26 Location25)
+                 (BaseGroundMove3 Vehicle5 Location18 Location26))
+                 (RGroundMove (BaseGroundMove3 Vehicle5 Location26
+                     Location27) (RGroundMove (BaseGroundMove
+                     Vehicle5 Location27 Location26) (RGroundMove
+                     (RGroundMove (BaseGroundMove3 Vehicle5 Location26
+                         Location27) (BaseGroundMove2 Vehicle5 Location27
+                         Location34)) (BaseGroundMove Vehicle5 Location34
+                     Location44)))))))))))))))) (UnloadEmptyEmptyCr
+     (Unload Crane16 Box0 Vehicle5 Location44)
+     (Put Crane16 Box0 Place16 Location44))))
+Partial order: FindOnPlace(Box0, Type0, Location0) FindCar(Vehicle0, Location0) GroundStay(Vehicle0, Location0, Location0) IsOnTop(Box0, Location0) Take(Crane0, Box0, Place0, Location0) Load(Crane0, Box0, Vehicle0, Location0) GroundStay(Vehicle0, Location0, Location0) BaseGroundMove(Vehicle1, Location1, Location3) BaseGroundMove3(Vehicle0, Location0, Location1) GroundStay(Vehicle0, Location1, Location1) BaseGroundMove2(Vehicle1, Location3, Location4) BaseGroundMove3(Vehicle0, Location1, Location3) BaseGroundMove2(Vehicle3, Location5, Location6) BaseGroundMove(Vehicle1, Location4, Location5) BaseGroundMove3(Vehicle0, Location3, Location4) FindNewCar(Vehicle1, Vehicle0, Location5) Unload(Crane2, Box0, Vehicle0, Location4) GroundStay(Vehicle0, Location4, Location4) BaseGroundMove(Vehicle0, Location4, Location3) BaseGroundMove2(Vehicle1, Location5, Location4) Put(Crane2, Box0, Place4, Location4) Take(Crane2, Box0, Place4, Location4) Load(Crane2, Box0, Vehicle1, Location4) BaseGroundMove2(Vehicle1, Location4, Location5) FindNewCar(Vehicle3, Vehicle1, Location6) Unload(Crane3, Box0, Vehicle1, Location5) BaseGroundMove3(Vehicle1, Location5, Location4) BaseGroundMove2(Vehicle3, Location6, Location5) Put(Crane3, Box0, Place5, Location5) Take(Crane3, Box0, Place5, Location5) Load(Crane3, Box0, Vehicle3, Location5) BaseGroundMove3(Vehicle3, Location5, Location6) BaseGroundMove2(Vehicle3, Location6, Location7) BaseGroundMove(Vehicle3, Location7, Location8) BaseGroundMove(Vehicle3, Location8, Location13) Unload(Crane5, Box0, Vehicle3, Location13) FindNewCar(Vehicle5, Vehicle3, Location16) Put(Crane5, Box0, Place8, Location13) BaseGroundMove3(Vehicle3, Location13, Location8) BaseGroundMove(Vehicle5, Location16, Location13) Take(Crane5, Box0, Place8, Location13) Load(Crane5, Box0, Vehicle5, Location13) BaseGroundMove(Vehicle5, Location13, Location16) BaseGroundMove3(Vehicle5, Location16, Location17) BaseGroundMove(Vehicle5, Location17, Location18) BaseGroundMove2(Vehicle12, Location26, Location25) BaseGroundMove3(Vehicle5, Location18, Location26) BaseGroundMove3(Vehicle5, Location26, Location27) BaseGroundMove(Vehicle5, Location27, Location26) BaseGroundMove3(Vehicle5, Location26, Location27) BaseGroundMove2(Vehicle5, Location27, Location34) BaseGroundMove(Vehicle5, Location34, Location44) Unload(Crane16, Box0, Vehicle5, Location44) Put(Crane16, Box0, Place16, Location44) 

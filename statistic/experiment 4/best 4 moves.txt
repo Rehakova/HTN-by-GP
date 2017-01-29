@@ -1,0 +1,54 @@
+(FinishBox (StartAtGroundDeliver (FindOnPlace
+     Box0 Type1 Location3) (FindCar Vehicle2 Location5)
+     (GroundArrivingRating (RGroundMove (BaseGroundMove
+         Vehicle2 Location5 Location1) (RGroundMove
+         (BaseGroundMove Vehicle2 Location1 Location2)
+         (BaseGroundMove4 Vehicle2 Location2 Location3))))
+     (Reorganize (Take Crane4 Box1 Place0 Location3)
+         (Put Crane4 Box1 Place1 Location3) (IsOnTop
+         Box0 Location3)) (LoadUpFreeCr (Take Crane4
+     Box0 Place0 Location3) (Load Crane4 Box0
+     Vehicle2 Location3)) (RGroundMove (BaseGroundMove2
+     Vehicle2 Location3 Location2) (RGroundMove
+     (RGroundMove (BaseGroundMove2 Vehicle2 Location2
+         Location1) (BaseGroundMove2 Vehicle2 Location1
+         Location5)) (RGroundMove (RGroundMove (BaseGroundMove
+     Vehicle2 Location5 Location8) (BaseGroundMove3
+     Vehicle2 Location8 Location9)) (TranshipmentGroundWaterMove
+     (UnloadEmptyFullCr (Unload Crane2 Box0 Vehicle2
+         Location9)) (FindBoat Vehicle4 Location16)
+     (WaterArrivingRating (RWaterMove (RWaterMove
+         (BaseWaterMove Vehicle4 Location16 Location11)
+         (BaseWaterMove2 Vehicle4 Location11 Location12))
+         (RWaterMove (BaseWaterMove2 Vehicle4 Location12
+             Location13) (RWaterMove (BaseWaterMove3 Vehicle4
+             Location13 Location14) (BaseWaterMove Vehicle4
+             Location14 Location9))))) (LoadUpGoodCr (Load
+     Crane2 Box0 Vehicle4 Location9)) (RWaterMove
+     (BaseWaterMove Vehicle4 Location9 Location14)
+     (RWaterMove (BaseWaterMove2 Vehicle4 Location14
+         Location13) (RWaterMove (BaseWaterMove4 Vehicle4
+         Location13 Location12) (RWaterMove (RWaterMove
+         (BaseWaterMove4 Vehicle4 Location12 Location17)
+         (BaseWaterMove3 Vehicle4 Location17 Location22))
+         (RWaterMove (BaseWaterMove Vehicle4 Location22
+             Location27) (TranshipmentWaterGroundMove
+             (UnloadEmptyFullCr (Unload Crane1 Box0 Vehicle4
+                 Location27)) (FindCar Vehicle1 Location27)
+             (GroundArrivingRating (GroundStay Vehicle1
+                 Location27 Location27)) (LoadUpGoodCr (Load
+             Crane1 Box0 Vehicle1 Location27)) (DodgeGroundMove
+             (BaseGroundMove Vehicle0 Location32 Location31)
+             (TranshipmentGroundGroundMove (UnloadEmptyFullCr
+                 (Unload Crane1 Box0 Vehicle1 Location27))
+                 (BaseGroundMove3 Vehicle1 Location27 Location26)
+                 (FindNewCar Vehicle0 Vehicle1 Location31)
+                 (GroundArrivingRating (BaseGroundMove Vehicle0
+                     Location31 Location27)) (LoadUpGoodCr (Load
+                 Crane1 Box0 Vehicle0 Location27)) (RGroundMove
+                 (GroundStay Vehicle0 Location27 Location27)
+                 (RGroundMove (BaseGroundMove4 Vehicle0 Location27
+                     Location31) (BaseGroundMove Vehicle0 Location31
+                     Location32))))))))))))))) (UnloadEmptyFullCr
+     (Unload Crane0 Box0 Vehicle0 Location32))))
+Partial order: FindOnPlace(Box0, Type1, Location3) FindCar(Vehicle2, Location5) BaseGroundMove(Vehicle2, Location5, Location1) BaseGroundMove(Vehicle2, Location1, Location2) BaseGroundMove4(Vehicle2, Location2, Location3) Take(Crane4, Box1, Place0, Location3) Put(Crane4, Box1, Place1, Location3) IsOnTop(Box0, Location3) Take(Crane4, Box0, Place0, Location3) Load(Crane4, Box0, Vehicle2, Location3) BaseGroundMove2(Vehicle2, Location3, Location2) BaseGroundMove2(Vehicle2, Location2, Location1) BaseGroundMove2(Vehicle2, Location1, Location5) BaseGroundMove(Vehicle2, Location5, Location8) BaseGroundMove3(Vehicle2, Location8, Location9) FindBoat(Vehicle4, Location16) BaseWaterMove(Vehicle4, Location16, Location11) Unload(Crane2, Box0, Vehicle2, Location9) BaseWaterMove2(Vehicle4, Location11, Location12) BaseWaterMove2(Vehicle4, Location12, Location13) BaseWaterMove3(Vehicle4, Location13, Location14) BaseWaterMove(Vehicle4, Location14, Location9) Load(Crane2, Box0, Vehicle4, Location9) BaseWaterMove(Vehicle4, Location9, Location14) BaseWaterMove2(Vehicle4, Location14, Location13) BaseWaterMove4(Vehicle4, Location13, Location12) BaseWaterMove4(Vehicle4, Location12, Location17) BaseWaterMove3(Vehicle4, Location17, Location22) BaseWaterMove(Vehicle4, Location22, Location27) FindCar(Vehicle1, Location27) GroundStay(Vehicle1, Location27, Location27) Unload(Crane1, Box0, Vehicle4, Location27) Load(Crane1, Box0, Vehicle1, Location27) BaseGroundMove(Vehicle0, Location32, Location31) FindNewCar(Vehicle0, Vehicle1, Location31) Unload(Crane1, Box0, Vehicle1, Location27) BaseGroundMove3(Vehicle1, Location27, Location26) BaseGroundMove(Vehicle0, Location31, Location27) Load(Crane1, Box0, Vehicle0, Location27) GroundStay(Vehicle0, Location27, Location27) BaseGroundMove4(Vehicle0, Location27, Location31) BaseGroundMove(Vehicle0, Location31, Location32) Unload(Crane0, Box0, Vehicle0, Location32) 
